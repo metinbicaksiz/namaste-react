@@ -1,0 +1,23 @@
+{
+  "name": "mypackage",
+  "version": "1.0.0",
+  "description": "my first package",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metinbicaksiz/namasste-react.git"
+  },
+  "keywords": [],
+  "author": "MB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metinbicaksiz/namasste-react/issues"
+  },
+  "homepage": "https://github.com/metinbicaksiz/namasste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
