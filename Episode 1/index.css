@@ -1,3 +1,112 @@
-#heading{
-    color: red;
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px;
+}
+.logo > img{
+    width: 75px;
+    height:75px;
+}
+
+.nav-items{
+    padding: 0 20px;
+}
+
+.nav-items > ul{
+    display: flex;
+    font-size: 20px;
+}
+
+.nav-items > ul > li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.body{
+    margin: 5px;
+}
+
+.filter{
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+}
+.search{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.rest-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.restCard{
+    width: 200px;
+    padding: 5px;
+    margin: 5px 2px;
+}
+
+.restCard:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid gray;
+    transform: scale(1.01);
+}
+
+.rest-img > img{
+    width: 100%;
+    padding:3px;
+    object-fit: cover;
+}
+
+.rest-info{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.filter-btn {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    width: 200px;
+    height: 350px;
+    background-color: #F0F0F0;
+    margin: 10px;
+}
+
+.login-btn {
+    background-color: aqua;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+.login-btn:hover {
+    background-color: #ffb606;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.search-btn{
+    margin-left: 4px;
+    background-color: orangered;
+    cursor: pointer;
+}
+.search-btn:hover{
+    margin-left: 4px;
+    background-color: #ffb606;
+    cursor: pointer;
 }
