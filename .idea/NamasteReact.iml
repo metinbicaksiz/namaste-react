@@ -5,8 +5,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/Episode 1/.parcel-cache" />
-      <excludeFolder url="file://$MODULE_DIR$/Episode 1/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/swiggy/.parcel-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/swiggy/dist" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

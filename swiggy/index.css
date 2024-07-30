@@ -110,3 +110,20 @@
     background-color: #ffb606;
     cursor: pointer;
 }
+
+.userCard{
+    margin: 80px;
+    padding: 10px;
+    border: 1px double aqua;
+}
+
+.about{
+    display: flex;
+}
+.button-plus{
+    background-color: green;
+}
+
+.button-minus{
+    background-color: red;
+}
