@@ -1,4 +1,5 @@
 import React from "react";
+import { IMG_API} from "../utils/constants";
 
 const RestCard = (props) => {
     const { restaurant } = props;
@@ -10,17 +11,15 @@ const RestCard = (props) => {
         cloudinaryImageId,
         costForTwo
     } = restaurant?.info;
-    const imgUrl = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
     return (
-        <div className="restCard">
-            <div className="rest-img">
-                <img src={imgUrl + cloudinaryImageId} alt="Daphne's Cafe"/>
+        <div className="m-2 p-2 w-[250px] h-[500px] bg-purple-300 hover:bg-purple-400 rounded-lg ">
+            <div>
+                <img className="rounded-lg m-1 w-[225px] h-[225px]" src={IMG_API + cloudinaryImageId} alt="Daphne Food App"/>
             </div>
-            <h3>{name}</h3>
-            <div className="rest-info">
-                <span>{avgRating}</span> <span>{restaurant?.info.sla.deliveryTime} minutes</span>
-                <p>{cuisines.join(", ")}</p>
-            </div>
+            <h3 className="font-bold py-2 text-lg">{name}</h3>
+            <h4 className="text-lg">{avgRating}</h4>
+            <h4 className="text-lg">{restaurant?.info.sla.deliveryTime} minutes</h4>
+            <h4 className="text-lg">{cuisines.join(", ")}</h4>
         </div>
     )
 };
