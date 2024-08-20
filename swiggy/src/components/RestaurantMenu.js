@@ -20,7 +20,7 @@ const RestaurantMenu = () => {
         costForTwoMessage
     } = restInfo?.cards[2]?.card?.card?.info;
 
-    const {itemCards}  =  restInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[13]?.card?.card;
+    const {itemCards}  =  restInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[16]?.card?.card;
     const categories = itemCards.filter(c => c?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.Dish");
     return (
         <div className="text-center">
@@ -31,7 +31,8 @@ const RestaurantMenu = () => {
             <h2>Menu</h2>
             <ul>
                 {itemCards.map((item) =>
-                    <li key={item?.card?.info?.id}>{item?.card?.info?.name} - {item?.card?.info?.price/100}</li>
+                    <li key={item?.card?.info?.id}>{item?.card?.info?.name} - {item?.card?.info?.price / 100}
+                    </li>
                 )}
             </ul>
                 {

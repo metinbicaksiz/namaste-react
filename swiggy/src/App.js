@@ -8,6 +8,7 @@ import Error from "./components/Error";
 import Body from "./components/Body";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/Shimmer";
+import Cart from "./components/Cart";
 
 const Grocery = lazy(() => import("./components/Grocery"));
 
@@ -26,6 +27,9 @@ const appRouter = createBrowserRouter([
             },{
                 path:"/contact",
                 element:<Contact />
+            },{
+                path:"/cart",
+                element:<Cart />
             },{
                 path:"/grocery",
                 element:

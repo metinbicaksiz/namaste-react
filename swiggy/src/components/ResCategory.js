@@ -1,8 +1,11 @@
 import ItemList from "./ItemList";
+import {useContext} from "react";
+import UserContext from "../utils/UserContext";
 
 const ResCategory = (props) => {
     const card = props;
     let { showIndex, setShowIndex } = props;
+    const data = useContext(UserContext);
     return(
         <>
             <div className="w-1/2 mx-auto my-4 bg-purple-100 shadow-lg p-4">

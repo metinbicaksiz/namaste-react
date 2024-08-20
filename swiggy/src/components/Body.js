@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import { Link } from "react-router-dom";
 import { SWIGGY_API} from "../utils/constants";
 import RestCard from "./RestCard";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus"
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
     const [restaurants, setRestaurants] = useState([]);
@@ -25,6 +26,8 @@ const Body = () => {
     if (onlineStatus === false) {
         return <h1>Looks like you are offline! Please check your connection!!!</h1>
     }
+
+    const { loggedInUSer, setUserName } = useContext(UserContext);
 
     return restaurants.length === 0 ? (
         <Shimmer />
@@ -58,6 +61,14 @@ const Body = () => {
                     }}>
                         top rated restaurants
                     </button>
+                </div>
+                <div className="m-4 p-4">
+                    <label htmlFor="">UserName:</label>
+                    <input
+                        type="text"
+                        className="border border-black mx-2 p-1"
+                        value={loggedInUSer}
+                        onChange={(e) => setUserName(e.target.value) }/>
                 </div>
             </div>
             <div className="flex flex-wrap justify-center flex-row">

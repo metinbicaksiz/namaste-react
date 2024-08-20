@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import { IMG_API} from "../utils/constants";
+import userContext from "../utils/UserContext";
+import UserContext from "../utils/UserContext";
 
 const RestCard = (props) => {
     const { restaurant } = props;
+    const data = useContext(UserContext);
 
     const {
         name,
@@ -20,6 +23,7 @@ const RestCard = (props) => {
             <h4 className="text-lg">{avgRating}</h4>
             <h4 className="text-lg">{restaurant?.info.sla.deliveryTime} minutes</h4>
             <h4 className="text-lg">{cuisines.join(", ")}</h4>
+            <h4>{data.loggedInUSer}</h4>
         </div>
     )
 };
