@@ -1,3 +1,4 @@
+import React from 'react';
 import UserClass from "./UserClass";
 // import User from "./User";
 import {Component} from "react";

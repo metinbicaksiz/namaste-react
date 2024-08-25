@@ -1,3 +1,4 @@
+import React from 'react';
 const Grocery = () => {
     return (
         <h1>Main page filled with Grocery items</h1>
