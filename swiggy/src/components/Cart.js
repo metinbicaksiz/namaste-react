@@ -18,6 +18,7 @@ const Cart = () => {
                 </h1>
                 <button
                     className="font-medium text-red-500"
+                    data-testid="clearBtn"
                     onClick={handleClearCart}
                 >
                     Clear Cart
@@ -27,7 +28,13 @@ const Cart = () => {
                 {cartItems?.items.length === 0 && "No Items in the Cart"}
                 {
                     cartItems?.items.map((item, index) => (
-                        <li key={index} className="text-center m-2 font-medium">{item}</li>
+                        <li
+                            key={index}
+                            data-testid="cart-item"
+                            className="text-center m-2 font-medium"
+                        >
+                            {item}
+                        </li>
                     ))
                 }
             </ul>

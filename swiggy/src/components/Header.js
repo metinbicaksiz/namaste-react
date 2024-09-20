@@ -1,6 +1,6 @@
 import React, {useContext, useState} from "react";
 import { Link } from "react-router-dom";
-import logo from "../../logo.png";
+// import logo from "../../logo.png";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import {useSelector} from "react-redux";
@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <div className="flex justify-between md:bg-purple-300 shadow-lg mb-3 sm:bg-amber-400 hover:bg-purple-400">
             <div className="w-28">
-                <img src={logo} alt="Daphne Food App"/>
+                {/*<img src={logo} alt="Daphne Food App"/>*/}
             </div>
             <div className="flex items-center">
                 <ul className="flex m-8 p-6">

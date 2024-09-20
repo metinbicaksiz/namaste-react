@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-dom-testing": "^1.12.0"
+  }
+}

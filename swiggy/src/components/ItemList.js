@@ -9,7 +9,9 @@ const ItemList = ({ items }) => {
         dispatch(addItem(items.name));
     }
     return(
-       <div className="border-b-gray-300 border-2 text-left p-2 m-2">
+       <div
+           data-testid="itemList"
+           className="border-b-gray-300 border-2 text-left p-2 m-2">
           <div className="py-2">
               <span className="font-semibold">{items?.name} - </span>
               <span>{items?.price / 100}</span>

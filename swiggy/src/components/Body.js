@@ -39,6 +39,7 @@ const Body = () => {
                         className="border border-solid border-black rounded-sm w-auto"
                         type="text"
                         name="searchInput"
+                        data-testid="search-input"
                         placeholder="Search for restaurants"
                         value={searchText}
                         onChange={(e)=>{
@@ -56,7 +57,7 @@ const Body = () => {
                 </div>
                 <div className="m-4 p-4">
                     <button className="px-4 py-1 bg-gray-100 rounded-lg" onClick={() => {
-                        const filteredList = restaurants.filter((restaurant) => restaurant.info.avgRating > 4)
+                        const filteredList = restaurants.filter((restaurant) => restaurant.info.avgRating > 4,5)
                         setFilteredRestaurants(filteredList);
                     }}>
                         top rated restaurants
@@ -75,6 +76,7 @@ const Body = () => {
                 {filteredRestaurants.map((restaurant) => (
                     <Link
                         key={restaurant.info.id}
+                        data-testid="resCard"
                         to={"/restaurants/" + restaurant.info.id}>
                         <RestCard restaurant={restaurant}/>
                     </Link>

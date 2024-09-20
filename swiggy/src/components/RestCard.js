@@ -15,7 +15,7 @@ const RestCard = (props) => {
         costForTwo
     } = restaurant?.info;
     return (
-        <div className="m-2 p-2 w-[250px] h-[500px] bg-purple-300 hover:bg-purple-400 rounded-lg ">
+        <div data-testid="restCard" className="m-2 p-2 w-[250px] h-[500px] bg-purple-300 hover:bg-purple-400 rounded-lg ">
             <div>
                 <img className="rounded-lg m-1 w-[225px] h-[225px]" src={IMG_API + cloudinaryImageId} alt="Daphne Food App"/>
             </div>
